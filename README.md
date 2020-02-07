@@ -7,7 +7,7 @@ Scrape posts on 4 chan for popular words to get hip with young kid culture
 2. Create concrete classes to represent attributes of boards, posts, and threads
 
 Once pages are succesfully scraped into classes then we can start formatting into database
-
+Can only scrape off first 10 pages. 
 We only want to store words and their word count for each day.
 
 
@@ -37,6 +37,16 @@ i.e. {
 		"custom_spoilers": 1,
 		"is_archived": 1
 	},
+
+Thread class strucutre:
+// for later  - cap code (identify mod/admin posts)
+no (post id)
+sub (subject)
+com (comments included)
+time (unix timestamp of post creation)
+replies (text replies)
+images (image replies that may have text, let's find out)
+
 
 
 Separate table for each board
