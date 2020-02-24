@@ -3,9 +3,8 @@ Scrape posts on 4 chan for popular words to visualize trends
 
 
 # Goals
-1. collect concrete list of boards into database
-2. Create concrete classes to represent attributes of boards, posts, and threads
-3. Confirm work flow of API to successfully retrieve all posts from each board's first 10 pages.
+1. Confirm work flow of API to successfully retrieve all posts from each board's first 10 pages.
+2. Make sure database cleans up day old information in between api calls. 
 
 Once pages are succesfully scraped into classes then we can start formatting into database
 Can only scrape off first 10 pages. 
