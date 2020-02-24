@@ -1,0 +1,2 @@
+
+sql = "DELETE FROM myTable WHERE Save_Date <= date('now','-1 day')"
