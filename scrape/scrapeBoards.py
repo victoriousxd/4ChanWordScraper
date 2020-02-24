@@ -12,14 +12,6 @@ boards_request = 'boards.json'
 
 threads_request = 'threads.json'
 
-"""
-
-Boards Table Structure
-| board | title | per_page | pages | last_modified | current thread # list
-
-
-"""
-
 
 def get_boards():
     """ Get board statistics API request in JSON format and input to database
@@ -69,6 +61,8 @@ def get_boards():
 
     # insert each board into boards table
     c.executemany('REPLACE INTO boards VALUES(?,?,?,?)', board_list)
+    
+    # commit and close database connection
     conn.commit()
     conn.close()
 
